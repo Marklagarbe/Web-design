@@ -1,0 +1,7 @@
+/* What changes when body is s2 (detail) or s3 (zoom). */
+body.s2 #earth{width:min(36vw,520px);left:72%;top:50%;transform:translate(-50%,-50%)}
+body.s2 .hero{pointer-events:none}
+body.s2 .side,body.s2 .mini,body.s2 .down{opacity:0}
+body.s2 .detail{opacity:1;pointer-events:auto;transition-delay:.7s}
+body.s3 #earth{width:150vw;left:50%;top:60%;transform:translate(-50%,-50%)}
+body.s3 .detail,body.s3 .hero,body.s3 .side,body.s3 .mini,body.s3 .down{opacity:0;pointer-events:none}

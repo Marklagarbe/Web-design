@@ -1,0 +1,8 @@
+/* Detail scene (title + paragraph + back/learn more/play row). */
+.detail{opacity:0;pointer-events:none;z-index:3}
+.detail .txt{position:absolute;left:8vw;top:30vh;max-width:380px}
+.detail .eyebrow{font-size:11px;letter-spacing:.2em;font-family:var(--serif);font-size:15px}
+.detail h1{font-size:clamp(64px,8vw,104px)}
+.detail .bar{margin:14px 0 20px}
+.detail .row{position:absolute;left:8vw;bottom:13vh;display:flex;gap:12px;align-items:center}
+.round{width:32px;height:32px;border-radius:50%;border:0;background:var(--pill);color:#0a1228;cursor:pointer;font-size:11px}

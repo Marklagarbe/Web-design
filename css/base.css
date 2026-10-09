@@ -1,0 +1,10 @@
+/* Colours, fonts (variables), reset, page background, stars, canvas layer. */
+:root{--bg:#0a1228;--bg2:#050a1a;--text:#fff;--mute:#d6dcef;--teal:#5fd0d6;--pill:#e9f1fb;--g1:rgba(80,150,255,.9);--g2:rgba(40,110,255,.55);--serif:'EB Garamond','Times New Roman',serif;--sans:'Montserrat',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:radial-gradient(ellipse at 50% 20%,#0f1c3c,var(--bg2) 70%);color:var(--text);font-family:var(--sans);overflow:hidden;position:relative}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+#stars span{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.1}}
+#gl{position:fixed;inset:0;z-index:2;pointer-events:none}

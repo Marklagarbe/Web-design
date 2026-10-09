@@ -1,0 +1,7 @@
+/* Top navigation bar. */
+nav{position:absolute;inset:0 0 auto 0;height:62px;margin:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(95,208,214,.35);z-index:5;font-size:11px;font-weight:600}
+.logo{font-weight:700;font-size:13px;color:#fff;text-decoration:none}.logo b{color:var(--teal)}
+nav ul{display:flex;gap:34px;list-style:none;align-items:center;height:100%}
+nav li a{color:#fff;text-decoration:none;display:flex;align-items:center;height:100%;position:relative}
+nav li a.on:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--teal)}
+.enroll{background:var(--pill);color:#0a1228!important;border-radius:99px;height:26px!important;padding:0 18px}

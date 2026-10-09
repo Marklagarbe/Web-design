@@ -1,0 +1,5 @@
+/* Venus / Earth / Mars sliding transition (body.sw / body.nt). */
+body.sw .side{opacity:0;transform:translateX(var(--mx,0px))}
+body.sw .mini{opacity:0;transform:translateX(var(--mx,0px)) scale(.6)}
+body.sw .down{opacity:0}
+body.nt *{transition:none!important}

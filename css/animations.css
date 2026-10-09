@@ -1,0 +1,8 @@
+/* Enter/exit animations for hero text, detail text and intro state. */
+body.intro .side,body.intro .mini{opacity:0;transform:translateY(26px)}
+.hero>*{transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1),filter .8s;transition-delay:calc(var(--k,0)*.09s)}
+.hero>:nth-child(2){--k:1}.hero>:nth-child(3){--k:2}.hero>:nth-child(4){--k:3}.hero>:nth-child(5){--k:4}
+body.intro .hero>*,body.s2 .hero>*,body.sw .hero>*{opacity:0;transform:translateY(22px) translateX(var(--dx,0px));filter:blur(8px)}
+.detail .txt>*,.detail .row{opacity:0;transform:translateX(-28px);filter:blur(6px);transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1),filter .8s}
+body.s2 .detail .txt>*,body.s2 .detail .row{opacity:1;transform:none;filter:none;transition-delay:calc(.8s + var(--k,0)*.1s)}
+.detail .txt>:nth-child(2){--k:1}.detail .txt>:nth-child(3){--k:2}.detail .txt>:nth-child(4){--k:3}.detail .row{--k:4}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>spaceedu | Planet Earth</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=EB+Garamond:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/planet-switch.css">
+<link rel="stylesheet" href="css/earth-legacy.css">
+<link rel="stylesheet" href="css/detail.css">
+<link rel="stylesheet" href="css/states.css">
+<link rel="stylesheet" href="css/zoom.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="intro">
+<div id="stars" aria-hidden="true"></div>
+<nav>
+  <a class="logo" href="#">space<b>edu</b></a>
+  <ul>
+    <li><a class="on" href="#">Planets</a></li><li><a href="#">Trailer</a></li><li><a href="#">Tickets</a></li><li><a href="#">Blog</a></li>
+    <li><a class="enroll" href="#">Enroll</a></li>
+  </ul>
+</nav>
+
+<div class="mini v" id="mv"></div><div class="mini m" id="mm"></div>
+<button class="side l" id="pl">VENUS</button><button class="side r" id="pr">MARS</button>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<section class="scene hero">
+  <div class="eyebrow">PLANET</div>
+  <h1 id="hn">EARTH</h1>
+  <div class="bar"></div>
+  <p id="hp">Learn more about this fascinating miracle that we call our home, Planet Earth. Course enrollment starts today. Early Bird tickets typically last a week, don't miss out!</p>
+  <button class="pill" id="start">Get started</button>
+</section>
+<button class="down scene" id="dn" aria-label="Scroll down" style="inset:auto auto -34px 50%">&darr;</button>
+
+<section class="scene detail">
+  <div class="txt">
+    <div class="eyebrow" id="de">THE BLUE PLANET</div>
+    <h1 id="dn1">EARTH</h1>
+    <div class="bar"></div>
+    <p id="dp">Earth is the third planet from the Sun and the only place we know of that supports life. Its axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth. The gravitational interaction between Earth and the Moon causes tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation.</p>
+  </div>
+  <div class="row"><button class="round" id="bk" aria-label="Back">&larr;</button><button class="pill" id="more">Learn more</button><button class="round" id="play" aria-label="Play trailer">&#9654;</button></div>
+</section>
+
+<div class="zoom"><div class="bar"></div><p id="zf"></p><button class="pill" id="back">Back to planets</button></div>
+
+<script src="js/core.js"></script>
+<script src="js/data/planets.js"></script>
+<script src="js/stars.js"></script>
+<script src="js/noise.js"></script>
+<script src="js/planet-patterns.js"></script>
+<script src="js/textures.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/planet-view.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/render-loop.js"></script>
+<script src="js/transitions.js"></script>
+<script src="js/events.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

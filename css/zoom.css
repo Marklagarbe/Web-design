@@ -1,0 +1,8 @@
+/* Zoom scene text (Back to planets). */
+.zoom{position:absolute;right:8vw;bottom:9vh;width:min(420px,84vw);z-index:4;pointer-events:none;text-shadow:0 2px 16px #000}
+.zoom>*{opacity:0;transform:translateY(18px);filter:blur(8px);transition:opacity .6s,transform .7s cubic-bezier(.2,.8,.2,1),filter .6s}
+.zoom .bar{margin:0 0 16px auto;transform-origin:right;transform:scaleX(0)}
+.zoom p{margin-bottom:22px}
+.zoom>:nth-child(2){--k:1}.zoom>:nth-child(3){--k:2}
+body.s3 .zoom{pointer-events:auto}
+body.s3 .zoom>*{opacity:1;transform:none;filter:none;transition-duration:.9s,.9s,.9s;transition-delay:calc(1.7s + var(--k,0)*.14s)}
